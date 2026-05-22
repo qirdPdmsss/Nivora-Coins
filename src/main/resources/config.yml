@@ -1,0 +1,42 @@
+database:
+  host: "127.0.0.1"
+  port: 3306
+  name: "nivora"
+  username: "root"
+  password: "password"
+  table-name: "coins"
+  pool-name: "NivoraCoinsPool"
+  pool-size: 10
+  minimum-idle: 2
+  connection-timeout: 10000
+  max-lifetime: 1800000
+  keepalive-time: 300000
+  leak-detection-threshold: 0
+
+economy:
+  allow-negative-balances: false
+  minimum-balance: 0
+
+format:
+  locale: "de-DE"
+
+placeholder:
+  enabled: true
+
+commands:
+  coins:
+    usage: "/coins"
+  eco:
+    usage: "/eco <add|set|remove> <player> <amount>"
+
+suggestions:
+  eco-actions:
+    - "add"
+    - "set"
+    - "remove"
+  amounts:
+    - "100"
+    - "1000"
+    - "10000"
+
+

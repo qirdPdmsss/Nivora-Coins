@@ -1,0 +1,36 @@
+prefix: "&b&lNIVORA &8• &7"
+
+general:
+  no-permission: "dir fehlt die &cBerechtigung&7."
+  players-only: "dieser Befehl ist nur für &cSpieler &7verfügbar."
+
+commands:
+  coins:
+    usage: "bitte nutze &e{usage}&7."
+    balance: "du hast aktuell &e{value} &7Coins."
+  eco:
+    usage: "bitte nutze &e{usage}&7."
+    invalid-action: "die Aktion ist &cungültig&7. Nutze &e{usage}&7."
+    invalid-amount: "der Betrag ist &cungültig&7."
+    amount-too-low: "der Betrag muss &cgrößer als 0 &7sein."
+    player-not-found: "der Spieler &e{player} &7wurde &cnicht gefunden&7."
+    add: "es wurden &a{value} &7Coins zu &e{player} &7hinzugefügt. Neuer Stand: &e{balance}&7."
+    set: "die Coins von &e{player} &7wurden auf &a{value} &7gesetzt."
+    remove: "es wurden &a{value} &7Coins von &e{player} &7entfernt. Neuer Stand: &e{balance}&7."
+    remove-blocked: "bei &e{player} &7würde der Kontostand unter &c0 &7fallen."
+
+database:
+  login-failed: "dein Coin-Konto konnte &cnicht geladen &7werden. Bitte versuche es gleich erneut."
+
+system:
+  enabled: "das Economy-System wurde &ageladen&7."
+  disabled: "das Economy-System wurde &agestoppt&7."
+  database-connected: "die MySQL-Verbindung wurde &aaufgebaut&7."
+  database-connection-failed: "die MySQL-Verbindung konnte &cnicht aufgebaut &7werden."
+  database-table-ready: "die Datenbanktabelle ist jetzt &abereit&7."
+  database-load-failed: "Coin-Daten konnten &cnicht geladen &7werden."
+  database-save-failed: "Coin-Daten konnten &cnicht gespeichert &7werden."
+  command-registration-failed: "der Command &e{command} &7konnte &cnicht registriert &7werden."
+  placeholder-registered: "die Placeholder wurden &ageladen&7."
+  placeholder-unavailable: "PlaceholderAPI ist &cnicht verfügbar&7."
+

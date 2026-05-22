@@ -1,0 +1,40 @@
+name: Nivora-Coins
+version: '${project.version}'
+main: de.qirdpdms.nivoraCoins.EconomyPlugin
+api-version: '1.21'
+softdepend:
+  - PlaceholderAPI
+commands:
+  coins:
+    description: Zeigt die aktuellen Coins eines Spielers an
+    usage: /coins
+    permission: novira.coins.command.coins
+  eco:
+    description: Verwalte Coins von Spielern
+    usage: /eco <add|set|remove> <player> <amount>
+    permission: novira.coins.command.eco
+permissions:
+  novira.coins.command.coins:
+    description: Erlaubt die Nutzung von /coins
+    default: true
+  novira.coins.command.eco:
+    description: Erlaubt die Nutzung von /eco
+    default: op
+  novira.coins.use:
+    description: Allgemeine Nutzungsberechtigung fuer das Economy-System
+    default: true
+  novira.coins.admin:
+    description: Administrative Berechtigung fuer das Economy-System
+    default: op
+  novira.coins.feature.placeholder:
+    description: Erlaubt die Nutzung der Coins-Placeholder
+    default: true
+  novira.coins.*:
+    description: Vollzugriff auf das Economy-System
+    default: op
+    children:
+      novira.coins.command.coins: true
+      novira.coins.command.eco: true
+      novira.coins.use: true
+      novira.coins.admin: true
+      novira.coins.feature.placeholder: true
